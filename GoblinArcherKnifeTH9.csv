@@ -1,0 +1,60 @@
+NOTE  |Cheap GoblinKnife farming with Archers as funneling troops
+NOTE  |Author: geheim007
+NOTE  |Version 1.0
+NOTE  |CC Required ! Giants !
+NOTE  |TH9, capacity: 220
+NOTE  |8 Giants, 6 WallB, 2 Healer, 50 Archer, 8 Wizards, 58 Goblins Spells: 2 Rage or 4 EQ, 1 Heal, 1 Haste
+
+	  |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |0          |3          |0          |0          |5          |0          |           |
+
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |0          |0          |0          |0          |0          |-10        |           |           |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|  
+MAKE  |A          |FRONT-LEFT |10         |1          |EXT-INT    |0          |2          |           |
+MAKE  |B          |FRONT-RIGHT|10         |1          |INT-EXT    |0          |3          |           |
+MAKE  |C          |FRONT-LEFT |10         |-12        |INT-EXT    |0          |0          |           |
+MAKE  |D          |FRONT-LEFT |10         |-9         |INT-EXT    |0          |3          |           |
+MAKE  |E          |FRONT-LEFT |10         |-13        |INT-EXT    |0          |4          |           |
+MAKE  |F          |FRONT-LEFT |10         |-15        |INT-EXT    |0          |2          |           |
+MAKE  |G          |FRONT-LEFT |10         |-17        |INT-EXT    |0          |3          |           |
+MAKE  |H          |FRONT-LEFT |10         |-8         |INT-EXT    |0          |3          |           |
+
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |C          |1          |3          |Espell     |60-80      |75-90      |100-200    |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |C          |1          |1          |Espell     |60-80      |75-90      |100-200    |           |
+WAIT  |2500-3000  |           |           |           |           |           |           |           |
+DROP  |A          |5,6,8,10   |4          |Giant      |59-75      |90-100     |40         |           |
+DROP  |B          |1,3,5,6    |4          |Giant      |59-75      |90-100     |600-800    |           |
+DROP  |A          |5,7,7,9,10 |25         |Arch       |70-80      |90-100     |50         |           |
+DROP  |A          |10         |1          |Castle     |50         |0          |600-800    |           |
+WAIT  |100-200    |           |           |           |           |           |           |           |
+DROP  |A          |10         |2          |Heal       |60-80      |120-140    |600-800    |           |
+WAIT  |400-800    |           |           |           |           |           |           |           |
+DROP  |A          |10         |2          |Wall       |55-75      |70-90      |100-200    |           |
+WAIT  |250-500    |           |           |           |           |           |           |           |
+DROP  |A          |10         |1          |Wall       |55-75      |70-90      |100-200    |           |
+DROP  |B          |1,3,3,5,6  |25         |Arch       |70-80      |90-100     |100-200    |           |
+DROP  |A          |10         |1          |Wall       |55-75      |70-90      |100-200    |           |
+WAIT  |250-500    |           |           |           |           |           |           |           |
+DROP  |A          |10         |2          |Wall       |55-75      |70-90      |100-200    |           |
+WAIT  |250-500    |           |           |           |           |           |           |           |
+DROP  |A          |10         |8          |Wiza       |50-75      |70-90      |100-200    |           |
+WAIT  |1000-1250  |           |           |           |           |           |           |           |
+DROP  |A          |9          |1          |Queen      |50         |0          |100-200    |           |
+DROP  |A          |10         |25         |Gobl       |50-75      |70-90      |100-200    |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |A          |10         |1          |HaSpell    |50-75      |70-90      |100-200    |           |
+WAIT  |1000-1500  |           |           |           |           |           |           |           |
+DROP  |A          |9          |1          |Warden     |50         |0          |600-800    |           |
+DROP  |D          |1          |1          |RSpell     |50         |0          |600-800    |           |
+DROP  |A          |10         |33         |Gobl       |50-75      |70-90      |100-200    |           |
+DROP  |A          |10         |1          |King       |50         |0          |100-200    |           |
+WAIT  |2500-3000  |           |           |           |           |           |           |           |
+DROP  |E          |1          |1          |HSpell     |50         |0          |100-200    |           |
+WAIT  |5500-6000  |           |           |           |           |           |           |           |
+DROP  |F          |2          |1          |RSpell     |50         |0          |100-200    |           |
+DROP  |A-B        |1-8        |1          |REMAIN     |50-70      |100        |50-100     |           |

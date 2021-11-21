@@ -1,0 +1,68 @@
+NOTE  |Author: Ahsan - ver. 1.1
+NOTE  |Mod by Arch, 171226a: Added SIDEB
+NOTE  |180727b: Less wait before CC, earlier hero activation
+NOTE  |180727a: Support for WallW and BattleB
+NOTE  |180701a: Support for 280 troops
+NOTE  |180104a: Longer delay before miners and BK
+NOTE  |180106a: Fixed baby to babyd typo
+NOTE  |Attack: Mass Miner
+NOTE  |Make Troops: all miner.  opt:3 breakers
+NOTE  |Drops no spells
+
+      |----------------------------------- Script: Mass Miners Start ---------------------------------|
+
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |5          |0          |0          |0          |0          |10         |           |TH SIDE
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |15         |0          |0          |0          |0          |0          |0          |0          |
+
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|MAKE SIDE VECTORS
+MAKE  |A          |FRONT-LEFT |10         |2          |INT-EXT    |0          |2          |           |vector for miner left
+MAKE  |B          |FRONT-RIGHT|10         |2          |INT-EXT    |0          |2          |           |vector for miner right
+MAKE  |C          |FRONT-LEFT |10         |-8         |INT-EXT    |0          |1          |           |vector for rage and heal
+MAKE  |D          |FRONT-RIGHT|10         |-8         |INT-EXT    |0          |1          |           |vector for rage
+MAKE  |E          |FRONT-LEFT |10         |-17        |INT-EXT    |0          |1          |           |vector for freeze
+MAKE  |F          |FRONT-LEFT |10         |-14        |INT-EXT    |0          |1          |           |vector for heal
+MAKE  |G          |FRONT-LEFT |10         |3          |INT-EXT    |0          |2          |           |vector for remaining troops
+MAKE  |H          |FRONT-RIGHT|10         |3          |INT-EXT    |0          |2          |           |vector for remaining troops
+
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|           |DROP TROOPS
+DROP  |A-B        |1-8        |10         |mine       |0          |0          |500        |           |drop miner
+DROP  |A-B        |1-8        |30         |mine       |0          |0          |500        |           |drop miner
+WAIT  |2500-3000  |           |           |           |           |           |           |           |Wait to launch breakers
+DROP  |A          |1          |1          |castle     |0          |0          |10         |           |launch castle 
+DROP  |A          |1          |1          |WallW      |0          |0          |10         |           |or WW 
+DROP  |A          |1          |1          |BattleB    |0          |0          |1000-1300  |           |or BBlimp  
+DROP  |A          |1          |6          |wall       |0          |0          |100-300    |           |launch wall breakers 
+DROP  |A          |1          |1          |king       |0          |0          |100-300    |           |launch king  
+DROP  |A          |1          |1          |queen      |0          |0          |100-300    |           |launch queen
+DROP  |A          |1          |1          |warden     |0          |0          |1000-1500  |           |launch warden
+      |D          |5          |1          |RSpell     |0          |0          |0          |           |drop rage
+      |C          |5          |1          |RSpell     |0          |0          |0          |           |drop rage
+      |C          |1          |1          |HSpell     |0          |0          |0          |           |drop heal
+      |E          |1          |1          |RSpell     |0          |0          |0          |           |drop rage
+      |F          |1          |1          |HSpell     |0          |0          |0          |           |drop heal
+      |E          |1          |1          |FSpell     |0          |0          |0          |           |drop freeze spell
+WAIT  |2500-3000  |           |           |           |           |           |           |           |Was 3K to 9K...trying faster
+DROP  |A          |1          |1          |warden     |0          |0          |500        |           |tome warden
+DROP  |A          |1          |1          |king       |0          |0          |100-300    |           |rage king  
+DROP  |A          |1          |1          |queen      |0          |0          |100-300    |           |cloak queen
+
+RECALC|           |           |           |           |           |           |           |           |RECALCULATE REMAINING TROOPS
+DROP  |G-H        |1-8        |20         |mine       |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |20         |giant      |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |20         |heal       |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |20         |wall       |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |20         |arch       |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |20         |barb       |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |20         |mini       |0          |0          |10-30      |           |
+DROP  |G-H        |1-8        |60         |babyd      |0          |0          |10-30      |           |Any baby dragons?
+DROP  |G-H        |1-8        |20         |wiza       |10-30      |50-100     |10-30      |           |Wizrds?
+DROP  |G-H        |1-8        |20         |witc       |10-30      |50-100     |10-30      |           |Witches?
+
+      |----------------------------------- Script: Mass Miners End -----------------------------------|
+      |Change log
+      |2016-31-07 ver. 1.0 Initial Script
+      |2016-08-01 ver. 1.1 ...

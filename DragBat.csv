@@ -1,0 +1,54 @@
+NOTE  |Author: ViperZ
+NOTE  |*******************TH12 Only*************
+NOTE  |Update 190701d to try to drop Bat Spells on TH.
+NOTE  |Troops : 1 Electro Dragon, 10 Dragon, 10 balloon
+NOTE  |Spells : 11 Bat Spells
+NOTE  |CC: Loons Slammer And Rage
+NOTE  |Use "External Edges" for REDLINE
+
+      |_TROOPNAME_|__FLEXIBLE_|___________|___________|___________|___________|___________|____TH12___|
+TRAIN |EDrag      |0          |0          |0          |0          |0          |0          |1          |
+TRAIN |Ball       |0          |0          |0          |0          |0          |0          |10         |
+TRAIN |Ball       |0          |0          |0          |0          |0          |0          |10         |
+
+TRAIN |BtSpell    |0          |0          |0          |0          |0          |0          |11          |
+
+      |_TROOPNAME_|___________|___________|___________|___________|___________|___________|____TH12___|Hero Abilities: 1.Auto 2.Timed 3.Both
+TRAIN |King       |0          |0          |0          |0          |0          |0          |1          |auto
+TRAIN |Queen      |0          |0          |0          |0          |0          |0          |1          |timed after 9 sec.
+TRAIN |Warden     |0          |0          |0          |0          |0          |0          |315        |both: auto or timed after 12 sec.
+
+      |___________|___________|___________|___________|___________|___________|___________|____TH12___|
+REDLN |0          |0          |0          |0          |0          |0          |0          |4          |
+
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |0          |0          |0          |0          |0          |10         |           |
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |15         |0          |0          |0          |0          |0          |0          |0          |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|
+MAKE  |G          |FRONT-LEFT |10         |1          |EXT-INT    |0          |1          |           |
+MAKE  |H          |FRONT-RIGHT|10         |1          |EXT-INT    |0          |1          |           |
+MAKE  |I          |FRONT-LEFT |8          |1          |INT-EXT    |0          |1          |           |
+MAKE  |J          |FRONT-RIGHT|8          |1          |INT-EXT    |0          |1          |           |
+MAKE  |P          |FRONT-LEFT |8          |1          |INT-EXT    |0          |1          |           |
+MAKE  |Q          |FRONT-RIGHT|10         |-9         |INT-EXT    |0          |0          |           |
+MAKE  |T          |FRONT-LEFT |1          |1          |INT-EXT    |           |           |TOWNHALL   |   
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |G          |3          |2          |Ball       |200-300    |30-70      |300-500    |           |
+DROP  |G          |3          |1          |EDrag      |30-50      |30-70      |10-20      |           |
+DROP  |H          |3          |1          |King       |30-50      |30-70      |10-20      |           |
+DROP  |H          |3          |1          |Queen      |30-50      |30-70      |10-20      |           |
+WAIT  |19000-20000|           |           |           |           |           |           |           |
+DROP  |I-J        |1-5        |5          |Ball       |20-30      |30-70      |300-500    |           |
+DROP  |I-J        |1-5        |5          |Drag       |20-30      |30-70      |300-500    |           |
+DROP  |P          |1          |1          |WallW      |30-50      |10-20      |10-20      |           |
+DROP  |P          |1          |1          |StoneS     |30-50      |10-20      |10-20      |           |
+DROP  |P          |1          |1          |Castle     |30-50      |10-20      |10-20      |           |
+DROP  |P          |1          |1          |BattleB    |30-50      |10-20      |10-20      |           |
+DROP  |P          |1          |1          |Warden     |30-50      |0          |800-1000   |           |
+DROP  |T          |1          |1          |RSpell     |20-30      |10-20      |30-50      |           |
+DROP  |T          |1          |13         |BtSpell    |20-30      |10-20      |150        |           |
+DROP  |Q          |1          |13         |BtSpell    |20-30      |10-20      |13000-15000|           |
+DROP  |G-H        |1-10       |1          |REMAIN     |30-50      |100        |50-100     |           | 

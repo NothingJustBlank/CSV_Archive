@@ -1,0 +1,37 @@
+NOTE  |Dark Hog Homecoming TH8 0.03
+NOTE  |Author: geheim007
+NOTE  |CC: Giants 
+NOTE  |200 Capacity: 2 Healer, 13 Wizards, 24 Hogs, 3 Heal Spells
+
+	  |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |0          |3          |0          |0          |5          |0          |           |
+
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |0          |0          |0          |0          |0          |-10        |           |           |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|  
+MAKE  |A          |FRONT-LEFT |10         |1          |EXT-INT    |0          |0          |           |
+MAKE  |B          |FRONT-RIGHT|10         |1          |INT-EXT    |0          |0          |           |
+MAKE  |C          |FRONT-LEFT |10         |-10        |INT-EXT    |0          |0          |           |
+MAKE  |D          |FRONT-LEFT |10         |-16        |INT-EXT    |0          |0          |           |
+MAKE  |E          |FRONT-RIGHT|10         |-10        |INT-EXT    |0          |0          |           |
+MAKE  |F          |FRONT-LEFT |10         |2          |EXT-INT    |0          |0          |           |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |A          |10         |1          |Castle     |50         |50         |700-1000   |           |
+DROP  |F          |10         |2          |Heal       |60-80      |120-140    |2000-2400  |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |A          |10         |1          |King       |50         |50         |100-200    |           |
+DROP  |F          |10         |1          |Warden     |50         |50         |50         |           |
+DROP  |A          |5,10       |16         |Hogs       |70-80      |90-100     |50         |           |
+DROP  |B          |7          |8          |Hogs       |70-80      |90-100     |0          |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |C          |5          |1          |HSpell     |50         |20         |500        |           |
+DROP  |E          |3          |1          |HSpell     |50         |20         |500        |           |
+DROP  |A          |5,7,9,10   |4          |Wiza       |70-80      |90-100     |50         |           |
+DROP  |B          |1,3,5,6    |4          |Wiza       |70-80      |90-100     |300-400    |           |
+DROP  |F          |10         |1          |Queen      |50         |50         |100-200    |           |
+DROP  |A          |10         |5          |Wiza       |50-75      |70-90      |2550       |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |D          |1          |1          |HSpell     |50         |20         |100-200    |           |
+DROP  |A-B        |1-8        |1          |REMAIN     |50-70      |100        |50-100     |           |

@@ -1,0 +1,44 @@
+NOTE  |Hog Homecoming TH9 3.06
+NOTE  |Author: geheim007
+NOTE  |-------------------
+NOTE  |220 Capacity: 2 Healer, 18 Wizards, 24 Hogs, 3-4 Heal Spells, CC: Giants 
+NOTE  |-------------------
+NOTE  |3.06 Removed SIDEB
+NOTE  |3.03 4th Healspell added.
+NOTE  |3.02 Bugfix in funnel. deployed 16 wizards instead of 8
+NOTE  |3.01 3 wizards for cleanup + delayed wizard deployment.
+
+	  |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |0          |2          |0          |2          |0          |5          |           |
+
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |0          |0          |0          |0          |0          |0         |           |           |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|  
+MAKE  |A          |FRONT-LEFT |10         |1          |EXT-INT    |0          |0          |           |
+MAKE  |B          |FRONT-RIGHT|10         |1          |INT-EXT    |0          |0          |           |
+MAKE  |C          |FRONT-LEFT |50         |-10        |INT-EXT    |0          |0          |           |
+MAKE  |D          |FRONT-LEFT |50         |-18        |INT-EXT    |0          |0          |           |
+MAKE  |E          |FRONT-RIGHT|50         |-10        |INT-EXT    |0          |0          |           |
+MAKE  |F          |FRONT-LEFT |10         |2          |EXT-INT    |0          |0          |           |
+MAKE  |G          |FRONT-LEFT |10         |-18        |INT-EXT    |0          |0          |           |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |A          |10         |1          |Castle     |50         |50         |400        |           |
+DROP  |F          |10         |2          |Heal       |60-80      |120-140    |500        |           |
+DROP  |A          |10         |1          |King       |50         |50         |0          |           |
+DROP  |F          |10         |1          |Queen      |50         |50         |0          |           |
+DROP  |F          |10         |1          |Warden     |50         |50         |0          |           |
+DROP  |A          |5,10       |16         |Hogs       |70-80      |90-100     |0          |           |
+DROP  |B          |7          |8          |Hogs       |70-80      |90-100     |0          |           |
+DROP  |A-B        |5,7,9,10   |4          |Wiza       |30-80      |90-100     |0          |           |
+DROP  |C          |12         |1          |HSpell     |50         |10-20      |0          |           |
+DROP  |E          |12         |1          |HSpell     |50         |10-20      |0          |           |
+DROP  |A          |10         |4          |Wiza       |50-75      |70-90      |4500       |           |
+DROP  |F          |10         |1          |Warden     |50         |50         |0          |           |
+DROP  |D          |1          |1          |HSpell     |50         |10-20      |2000       |           |
+DROP  |G          |5          |1          |HSpell     |50         |20         |0          |           |
+DROP  |A          |10         |3          |Wiza       |50-75      |70-90      |15000      |           |
+DROP  |A          |10         |1          |Wiza       |50-75      |70-90      |0          |           |
+DROP  |A          |1          |1          |Wiza       |50-75      |70-90      |0          |           |
+DROP  |B          |10         |1          |Wiza       |50-75      |70-90      |0          |           |

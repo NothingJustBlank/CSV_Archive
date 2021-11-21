@@ -1,0 +1,60 @@
+NOTE  |Author:Tekann - ver. 1.3 26-06-2017
+NOTE  |Updated by Arch, 170707d (Updated mix Notes, drop points, english)
+NOTE  |farm/push TH11
+NOTE  |Troops: 2 gole, 3 Witch, 22 Bowl, 6 Wall, BK, AQ, GW
+NOTE  |CC: 7 mine, rage
+NOTE  |Spells: 2 Rage, 1 Jump. (up to 4 rages)
+
+      |Troops: 1 gole, 3 Witc, 12 Mine, 19 Bowl or 1 gole, 3 Witc, 12 Mine, 17 Bowl, 6 Wall
+      |Spells: 2 Rage, 2 Jump,1 Freeze, 1 EQ (Optional, if you want to use cc use only rage and jump).
+      |CC: 1 Gole 1 Mine and Heal or Rage
+
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |           |           |           |           |           |5          |6          |           |
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|
+MAKE  |B          |FRONT-RIGHT|10         |2          |INT-EXT    |1          |1          |           |golem
+MAKE  |C          |FRONT-LEFT |10         |2          |INT-EXT    |1          |1          |           |castel
+MAKE  |D          |FRONT-LEFT |10         |1          |INT-EXT    |1          |1          |           |miners
+MAKE  |E          |FRONT-RIGHT|10         |2          |INT-EXT    |1          |1          |           |king
+MAKE  |F          |FRONT-RIGHT|10         |2          |INT-EXT    |1          |1          |           |queen
+MAKE  |G          |FRONT-RIGHT|10         |5          |INT-EXT    |1          |1          |           |bowler
+MAKE  |H          |FRONT-RIGHT|10         |2          |INT-EXT    |1          |1          |           |witch
+MAKE  |I          |FRONT-RIGHT|10         |2          |INT-EXT    |1          |1          |           |grande warden
+MAKE  |J          |FRONT-LEFT |10         |-9         |INT-EXT    |1          |1          |           |rage
+MAKE  |K          |FRONT-RIGHT|10         |-9         |INT-EXT    |1          |1          |           |rage
+MAKE  |L          |FRONT-LEFT |10         |-11        |INT-EXT    |1          |1          |           |jump
+MAKE  |M          |FRONT-RIGHT|10         |-19        |INT-EXT    |1          |1          |           |rage
+MAKE  |N          |FRONT-RIGHT|10         |-30        |INT-EXT    |1          |1          |           |rage
+MAKE  |O          |FRONT-RIGHT|10         |-13        |INT-EXT    |1          |1          |           |heal
+MAKE  |P          |FRONT-RIGHT|10         |2          |INT-EXT    |1          |1          |           |Wall
+MAKE  |Z          |FRONT-RIGHT|1          |0          |IGNORE     |0          |0          |TOWNHALL   |vector for spell drop on TH
+MAKE  |Q          |FRONT-RIGHT|1          |0          |IGNORE     |0          |0          |INFERNO    |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+      |Z          |1          |1          |ESpell     |0          |0          |0          |           |Drop Earthquake spell to damage TH 25%
+DROP  |B          |3-6        |2          |Gole       |0          |0          |500        |           |2 Gols from camps
+DROP  |C          |7          |1          |Castle     |0          |0          |1000       |           |Now has miners
+DROP  |G          |10         |4          |Bowl       |0          |0          |1000       |           |
+      |D          |5-10       |12         |Mine       |0          |0          |0          |           |
+DROP  |E          |1          |1          |King       |0          |0          |0          |           |
+DROP  |F          |1          |1          |Queen      |0          |0          |0          |           |
+DROP  |P          |1          |6          |Wall       |0          |0          |0          |           |
+
+WAIT  |8000-9000  |           |           |           |           |           |           |           |added to help with rings
+
+DROP  |G          |1-5        |15         |Bowl       |0          |0          |500        |           |
+DROP  |G          |1-5        |15         |Bowl       |0          |0          |500        |           |
+DROP  |H          |2-4        |3          |Witc       |0          |0          |0          |           |
+DROP  |I          |1          |1          |Warden     |0          |0          |500        |           |
+DROP  |O          |5          |1          |HSpell     |0          |0          |0          |           |
+DROP  |L          |1          |1          |JSpell     |0          |0          |0          |           |
+DROP  |I          |1          |1          |Warden     |0          |0          |0          |           |
+
+WAIT  |2000-3000  |           |           |           |           |           |           |           |
+
+DROP  |K          |3          |1          |RSpell     |0          |0          |2000       |           |
+DROP  |Q          |1          |1          |FSpell     |0          |0          |0          |           |
+DROP  |M          |1          |1          |RSpell     |0          |0          |5000       |           |
+DROP  |A          |2          |1          |JSpell     |0          |0          |2000       |           |
+DROP  |N          |5          |1          |RSpell     |0          |0          |0          |           |
+RECALC|           |           |           |           |           |           |           |           |recalculate remaining troops and then launch...

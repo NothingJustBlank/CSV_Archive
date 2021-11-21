@@ -1,0 +1,79 @@
+NOTE  |Bat War attack from Guapo
+NOTE  |190903k: Recreating from an attack
+NOTE  |TH12: 10 witches(12), 1 pekkas(25), 5 healers(14), 2 ice golems(15), 1 edrag(30), 1 loon, wall wrecker
+NOTE  |Spells: 5 Bats, 4 Freeze, 1 rage
+NOTE  |CC(40): 1 pekka (25), 1 ice golems(15), rage
+NOTE  |Attack Plan:
+NOTE  |2:30 Loon, edrag left side funnel. Wait 20 seconds.
+NOTE  |2:10 AQ left of funnel followed by healers 5 sec later behind her.
+NOTE  |2:03 icegolem middle, 7 sec later
+NOTE  |2:00 icegolem same middle spot
+NOTE  |1:59 BK further left
+NOTE  |1:58 (2 witches) 1 pekka further left
+NOTE  |1:54 WW at icegolem spot
+NOTE  |1:41 9 witches behind WW
+NOTE  |1:39 GW on icegolem spot
+NOTE  |1:36 rage ahead of witches
+NOTE  |1:30 freeze cc troops / eagle
+NOTE  |1:26 freeze ahead of middle forces
+NOTE  |1:20 bat spells ahead of BK spot
+NOTE  |1:20 last witch on 2 witches spot.
+NOTE  |1:05 freeze far back row, loon
+NOTE  |0:45 freeze far back row, middle
+NOTE  |0:20 freeze far back row, right
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |           |           |           |           |           |0          |0          |           |
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |20         |0          |0          |0          |0          |0          |           |           |
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|BUILDING___|
+MAKE  |D          |FRONT-RIGHT|10         |0          |INT-EXT    |4          |4          |           |
+MAKE  |Q          |FRONT-RIGHT|10         |0          |INT-EXT    |4          |4          |           |
+MAKE  |H          |FRONT-RIGHT|10         |3          |INT-EXT    |4          |4          |           |
+MAKE  |I          |FRONT-RIGHT|10         |0          |INT-EXT    |4          |4          |           |
+MAKE  |K          |FRONT-LEFT |10         |0          |INT-EXT    |4          |4          |           |
+MAKE  |B          |FRONT-LEFT |10         |-15        |INT-EXT    |4          |4          |           |
+MAKE  |P          |FRONT-LEFT |10         |0          |INT-EXT    |4          |4          |           |
+MAKE  |R          |FRONT-RIGHT|10         |-5         |INT-EXT    |4          |4          |           |
+MAKE  |T          |FRONT-RIGHT|1          |1          |INT-EXT    |4          |4          |TOWNHALL   | 
+MAKE  |E          |FRONT-LEFT |1          |1          |INT-EXT    |           |           |EAGLE      |
+MAKE  |X          |FRONT-LEFT |10         |-25        |INT-EXT    |           |           |           |
+MAKE  |Y          |FRONT-LEFT |10         |-25        |INT-EXT    |           |           |           |
+MAKE  |Z          |FRONT-RIGHT|10         |-25        |INT-EXT    |           |           |           |
+	  |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |D          |9          |1          |EDrag      |0          |2-5        |105-200     |           |
+DROP  |D          |9          |1          |Ball       |0          |2-5        |0          |           |
+WAIT  |12000-15000|           |           |           |           |           |           |           |
+DROP  |Q          |5          |1          |QUEEN      |0          |2-3        |105-200    |           |
+WAIT  |2000-3000  |           |           |           |           |           |           |           |
+DROP  |H          |5          |5          |Heal       |50-70      |2-5        |100-120    |           |
+WAIT  |4000-6000  |           |           |           |           |           |           |           |
+DROP  |I          |1          |2          |IceG       |50-100     |0          |100-120    |           |
+WAIT  |500-1000   |           |           |           |           |           |           |           |
+DROP  |I          |1          |1          |WallW      |50-70      |2-5        |100-120    |           |
+WAIT  |1000-2000  |           |           |           |           |           |           |           |
+DROP  |K          |7          |1          |KING       |50-70      |0          |105-200    |           |	  
+WAIT  |1000-2000  |           |           |           |           |           |           |           |
+DROP  |P          |3          |1          |Pekk       |50-70      |2-5        |15-20      |           |
+WAIT  |1000-2000  |           |           |           |           |           |           |           |
+DROP  |I          |1          |9          |Witc       |50-70      |2-5        |100-120    |           |
+WAIT  |1000-2000  |           |           |           |           |           |           |           |
+DROP  |I          |1          |9          |Warden     |50-70      |2-5        |100-120    |           |
+WAIT  |1000-2000  |           |           |           |           |           |           |           |
+DROP  |R          |1          |1          |RSpell     |50-70      |2-5        |100-120    |           |
+WAIT  |2000-4000  |           |           |           |           |           |           |           |
+DROP  |T          |1          |1          |RSpell     |50-70      |2-5        |100-120    |           |
+WAIT  |3000-5000  |           |           |           |           |           |           |           |
+DROP  |E          |1          |1          |FSpell     |50-70      |2-5        |100-120    |           |
+WAIT  |4000-6000  |           |           |           |           |           |           |           |
+DROP  |B          |5          |7          |BtSpell    |50-70      |2-5        |100-120    |           |
+WAIT  |500-1000   |           |           |           |           |           |           |           |
+DROP  |P          |5          |1          |Witc       |50-70      |2-5        |15-20      |           |
+WAIT  |14000-15000|           |           |           |           |           |           |           |
+DROP  |X          |7          |1          |FSpell     |0          |2-3        |105-200    |           |
+WAIT  |3000-5000  |           |           |           |           |           |           |           |
+DROP  |Y          |10         |1          |FSpell     |50-70      |2-5        |100-120    |           |
+WAIT  |3000-5000  |           |           |           |           |           |           |           |
+DROP  |Z          |7          |1          |FSpell     |50-70      |2-5        |100-120    |           |
+WAIT  |1000-2000  |           |           |           |           |           |           |           |
+DROP  |I          |1          |10         |REMAIN     |50-70      |30-50      |10-12      |           |
+

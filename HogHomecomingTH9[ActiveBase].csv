@@ -1,0 +1,37 @@
+NOTE  |Dark Hog Homecoming TH9 + Poison 0.5
+NOTE  |Author: geheim007
+NOTE  |CC: Giants 
+NOTE  |220 Capacity: 2 Healer, 18 Wizards, 24 Hogs, 3 Heal Spells
+NOTE  |Uses 1 Poison (CC or normal possible)
+
+	  |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |0          |3          |0          |0          |5          |0          |           |
+
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |0          |0          |0          |0          |0          |-3         |           |           |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|  
+MAKE  |A          |FRONT-LEFT |10         |1          |EXT-INT    |0          |0          |           |
+MAKE  |B          |FRONT-RIGHT|10         |1          |INT-EXT    |0          |0          |           |
+MAKE  |C          |FRONT-LEFT |50         |-10        |INT-EXT    |0          |0          |           |
+MAKE  |D          |FRONT-LEFT |50         |-17        |INT-EXT    |0          |0          |           |
+MAKE  |E          |FRONT-RIGHT|50         |-10        |INT-EXT    |0          |0          |           |
+MAKE  |F          |FRONT-LEFT |10         |2          |EXT-INT    |0          |0          |           |
+MAKE  |G          |FRONT-LEFT |10         |-9          |EXT-INT    |0          |0          |           |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |A          |10         |1          |Castle     |50         |50         |400        |           |
+DROP  |F          |10         |2          |Heal       |60-80      |120-140    |500        |           |
+DROP  |A          |10         |1          |King       |50         |50         |0          |           |
+DROP  |F          |10         |1          |Queen      |50         |50         |0          |           |
+DROP  |F          |10         |1          |Warden     |50         |50         |0          |           |
+DROP  |A-B        |5,7,9,10   |8          |Wiza       |30-80      |90-100     |0          |           |
+DROP  |A          |5,10       |16         |Hogs       |70-80      |90-100     |0          |           |
+DROP  |B          |7          |8          |Hogs       |70-80      |90-100     |0          |           |
+DROP  |C          |12         |1          |HSpell     |50         |10-20      |0          |           |
+DROP  |E          |12         |1          |HSpell     |50         |10-20      |0          |           |
+DROP  |A          |10         |10         |Wiza       |50-75      |70-90      |4500       |           |
+DROP  |G          |10         |1          |PSpell     |50         |10-20      |0          |           |
+DROP  |D          |1          |1          |HSpell     |50         |10-20      |2000       |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |A-B        |1-8        |1          |REMAIN     |50-70      |100        |50-100     |           |

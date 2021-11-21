@@ -1,0 +1,51 @@
+﻿NOTE  |Author: Z E C K and Chief Rico v1.0 [11.21.2017]
+NOTE  |Train: 12 Ballons, 18 BabyDragons, 3 Rage, 1 Clone, 1 Haste + 1 Rage and LOONS in CC
+NOTE  |Script work on "EXTERNAL EDGES"  
+NOTE  |BK:3-5, AQ:3-5, GW:15 
+
+	  |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCED SIDE|
+SIDE  |0          |0          |0          |0          |0          |0          |10         |           |
+      |EAGLE      |INFERNO    |XBOW       |WIZTOWER   |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |15         |5          |0          |0          |0          |0          |0          |0          |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|BUILDING___|
+MAKE  |A          |FRONT-LEFT |10         |0          |EXT-INT    |0          |5          |           |
+MAKE  |B          |FRONT-RIGHT|10         |0          |INT-EXT    |0          |5          |           |
+MAKE  |Z          |FRONT-RIGHT|10         |0          |EXT-INT    |0          |5          |           |
+MAKE  |K          |FRONT-LEFT |10         |0          |INT-EXT    |0          |5          |           |
+MAKE  |C          |FRONT-LEFT |10         |-7         |INT-EXT    |0          |5          |           |
+MAKE  |D          |FRONT-RIGHT|10         |-8         |INT-EXT    |0          |5          |           |
+MAKE  |E          |FRONT-LEFT |10         |-16        |INT-EXT    |0          |5          |           |
+MAKE  |F          |FRONT-RIGHT|10         |-15        |INT-EXT    |0          |5          |           |
+MAKE  |L          |FRONT-RIGHT|10         |-13        |INT-EXT    |0          |5          |           |
+MAKE  |M          |LEFT-FRONT |10         |0          |EXT-INT    |0          |5          |           |
+MAKE  |N          |RIGHT-FRONT|10         |0          |EXT-INT    |0          |5          |           |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|
+DROP  |M          |3          |1          |King       |60-70      |           |500-700    |           |
+
+DROP  |N          |3          |1          |Queen      |60-70      |           |250-500    |           |
+WAIT  |15000-30000|           |           |           |           |           |           |           |
+
+DROP  |A          |2,4,6,8,10 |5          |BabyD      |55-70      |37-50      |40         |           |
+DROP  |B          |1,3,5,7    |4          |BabyD      |55-70      |38-55      |70         |           |
+DROP  |Z          |7,8,9,10   |4          |BabyD      |50-70      |37-50      |40         |           |
+DROP  |K          |1,2,3,4,5  |5          |BabyD      |50-70      |38-55      |500-700    |           |
+DROP  |D          |4          |1          |RSpell     |50-100     |           |500-700    |           |
+DROP  |C          |4          |1          |RSpell     |50-100     |           |500-700    |           |
+DROP  |D          |1          |1          |HaSpell    |50-100     |           |500-700    |           |
+DROP  |A          |10         |1          |Warden     |50-70      |           |500-700    |           |
+DROP  |B          |4          |1          |Castle     |30-50      |37-70      |500-700    |           |
+DROP  |A          |4,6,8,10   |4          |Ball       |50-70      |36-55      |40         |           |
+DROP  |B          |1,3,5,6    |4          |Ball       |50-70      |37-50      |50         |           |
+DROP  |Z          |7,10       |2          |Ball       |55-70      |36-55      |50         |           |
+DROP  |K          |1,3        |2          |Ball       |55-70      |37-50      |500-700    |           |
+WAIT  |2000-2500  |           |           |           |           |           |           |           |
+DROP  |E          |3          |1          |RSpell     |50-100     |           |50-100     |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |F          |2          |1          |RSpell     |50-100     |           |500-700    |           |
+RECALC|           |           |           |           |           |           |           |           |
+DROP  |L          |1          |1          |CSpell     |50-100     |           |50-100     |           |
+WAIT  |2500-3000  |           |           |           |           |           |           |           |
+DROP  |A          |10         |1          |Warden     |70-100     |           |500-700    |           |
+DROP  |M-N        |7-10       |1          |REMAIN     |50-70      |100        |50-100     |           |

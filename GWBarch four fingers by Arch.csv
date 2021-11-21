@@ -1,0 +1,46 @@
+NOTE  |Author: Sardo - ver. 1.0 - 05.01.2016 
+NOTE  |Modified by Arch, 160921b
+NOTE  |Attack: FF Barch, +2 tile from redline
+NOTE  |Make these Troops: Giants, Wall breakers, Barbarians 50%, Archers 50%
+NOTE  |Will drop Giant, Breakers, Barbs, Archers, Heroes, Castle if enabled from GUI
+
+      |---------------------------------------- four fingers barch start -----------------------------|
+
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|___________|
+
+MAKE  |A          |FRONT-RIGHT|10         |1          |EXT-INT    |2          |2          |           |
+MAKE  |E          |FRONT-LEFT |10         |1          |INT-EXT    |2          |2          |           |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________| 
+
+DROP  |A-E        |6-10       |50         |giant      |0          |0          |1000       |           |
+DROP  |A-E        |6-10       |50         |wall       |0          |0          |1000       |           |
+DROP  |A-E        |6-10       |50         |barb       |0          |0          |1000       |           |
+DROP  |A-E        |6-10       |50         |arch       |0          |0          |1000       |           |
+DROP  |A-E        |6-10       |50         |gobl       |0          |0          |0          |           |
+
+WAIT  |500-1000   |           |           |           |           |           |           |           |
+
+NOTE  |Drop again in case we missed any...
+
+DROP  |A-E        |6-10       |50         |giant      |0          |0          |0          |           |
+DROP  |A-E        |6-10       |50         |wall       |0          |0          |0          |           |
+DROP  |A-E        |6-10       |50         |barb       |0          |0          |0          |           |
+DROP  |A-E        |6-10       |50         |arch       |0          |0          |0          |           |
+DROP  |A-E        |6-10       |50         |gobl       |0          |0          |0          |           |
+
+DROP  |A          |3          |10         |king       |0          |0          |100-500    |           |
+DROP  |A          |8          |15         |castle     |0          |0          |500-1000   |           |
+DROP  |A          |3          |2          |queen      |0          |0          |100-500    |           |
+DROP  |A          |3          |2          |Warden     |0          |0          |0          |           |
+
+RECALC|           |           |           |           |           |           |           |           |
+
+WAIT  |100-300    |           |           |           |           |           |           |           |
+
+
+      |                                                                                               |
+      |------------------------------------- four fingers barch end-----------------------------------|
+
+

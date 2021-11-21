@@ -1,0 +1,74 @@
+﻿NOTE  | EDragBat by Arch, ver 14-Mar-19a
+NOTE  | Troops:EDrag:9 - Balloon:2
+NOTE  | Spells: 9 Bat spells, 2 Freeze spells
+NOTE  | Castle: EDrag, 2 Balloons, Rage, WallWrecker
+NOTE  | Set to External edges
+
+      |_TROOPNAME_|__FLEXIBLE_|____TH06___|____TH07___|____TH08___|____TH09___|____TH10___|____TH11___|____TH12___|
+TRAIN |EDrag      |0          |0          |0          |0          |0          |0          |0          |9          |
+TRAIN |Ball       |0          |0          |0          |0          |0          |0          |0          |2          |
+TRAIN |FSpell     |0          |0          |0          |0          |0          |0          |0          |2          |
+TRAIN |Btspell    |0          |0          |0          |0          |0          |0          |0          |9          |
+TRAIN |King       |0          |0          |0          |0          |0          |0          |0          |1          |
+TRAIN |Queen      |0          |0          |0          |0          |0          |0          |0          |1          |
+TRAIN |Warden     |0          |0          |0          |0          |0          |0          |0          |1          |
+      |___________|___________|____TH06___|____TH07___|____TH08___|____TH09___|____TH10___|____TH11___|____TH12___|
+REDLN |0          |0          |0          |0          |0          |0          |0          |0          |4          |
+DRPLN |0          |0          |0          |0          |0          |0          |0          |0          |0          |
+      |___________|___________|____TH06___|____TH07___|____TH08___|____TH09___|____TH10___|____TH11___|____TH12___|
+CCREQ |           |           |           |           |           |           |           |           |EDrag,2Ball,Rage,WW|
+ 
+      |-----------------------------------------------------------------------------------------------|
+      |EXTR. GOLD |EXTR.ELIXIR|EXTR. DARK |DEPO. GOLD |DEPO.ELIXIR|DEPO. DARK |TOWNHALL   |FORCEDSIDE |              
+SIDE  |0          |0          |0          |0          |0          |0          |12         |0          |
+      |EAGLE      |INFERNO    |AIRSWEEPER |XBOW       |MORTAR     |AIRDEFENSE |GEMBOX     |GEMBOX     |
+SIDEB |5          |0          |IGNORE     |0          |0          |0          |0          |0          |
+
+      |VECTOR_____|SIDE_______|DROP_POINTS|ADDTILES___|VERSUS_____|RANDOMX_PX_|RANDOMY_PX_|BUILDING___|
+MAKE  |A          |FRONT-LEFT |10         |0          |EXT-INT    |0          |5          |           |           |
+MAKE  |B          |FRONT-RIGHT|10         |0          |INT-EXT    |0          |5          |           |           |
+MAKE  |M          |LEFT-FRONT |10         |0          |EXT-INT    |0          |5          |           |           |
+MAKE  |N          |RIGHT-FRONT|10         |0          |EXT-INT    |0          |5          |           |           |
+MAKE  |E          |FRONT-LEFT |1          |0          |IGNORE     |           |           |EAGLE      |           |
+MAKE  |T          |FRONT-LEFT |1          |0          |IGNORE     |           |           |TOWNHALL   |           |
+
+      |VECTOR_____|INDEX______|QTY_X_VECT_|TROOPNAME__|DELAY_DROP_|DELAYCHANGE|SLEEPAFTER_|___________|___________|
+DROP  |M          |1          |1          |King       |           |           |           |           |           |
+DROP  |N          |1          |1          |Queen      |           |           |           |           |           |
+WAIT  |2500-3500  |           |           |           |           |           |           |           |           |
+DROP  |A          |6          |1          |EDrag      |           |           |           |           |           |
+DROP  |A          |7          |1          |EDrag      |           |           |           |           |           |
+DROP  |A          |8          |1          |EDrag      |           |           |           |           |           |
+DROP  |A          |9          |1          |EDrag      |           |           |           |           |           |
+DROP  |A          |10         |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |1          |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |2          |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |3          |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |4          |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |5          |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |6          |1          |EDrag      |           |           |           |           |           |
+DROP  |B          |1          |5          |Ball       |           |           |           |           |           |
+DROP  |A          |10         |5          |Ball       |           |           |           |           |           |
+
+WAIT  |2400-3500  |           |           |           |           |           |           |           |           |
+DROP  |A          |10         |1          |WallW      |           |           |           |           |           |
+DROP  |A          |10         |1          |BattleB    |           |           |           |           |           |
+DROP  |A          |10         |1          |StoneS     |           |           |           |           |           |
+DROP  |A          |10         |1          |Castle     |           |           |           |           |           |
+DROP  |M          |1          |1          |King       |           |           |           |           |           |
+DROP  |N          |1          |1          |Queen      |           |           |           |           |           |
+DROP  |A          |10         |1          |Warden     |           |           |           |           |           |
+
+WAIT  |4400-4600  |           |           |           |           |           |           |           |           |
+DROP  |E          |1          |1          |FSpell     |           |           |           |           |           |
+
+DROP  |E          |1          |1          |RSpell     |           |           |           |           |           |
+DROP  |E          |1          |2          |BtSpell    |           |           |           |           |           |Bats on Eagle
+DROP  |E          |1          |2          |BtSpell    |           |           |           |           |           |Up to 11 Bat Spells
+DROP  |E          |1          |2          |BtSpell    |           |           |           |           |           |
+DROP  |E          |1          |2          |BtSpell    |           |           |           |           |           |
+DROP  |E          |1          |3          |BtSpell    |           |           |           |           |           |
+WAIT  |2700-3000  |           |           |           |           |           |           |           |           |
+DROP  |T          |1          |1          |FSpell     |           |           |           |           |           |Freeze TH
+DROP  |A          |10         |1          |Warden     |           |           |           |           |           |Tome
+DROP  |A          |1          |20         |Remain     |           |           |           |           |
